@@ -2,6 +2,8 @@ package co.g2academy;
 
 public class ThisExample {
     int num = 10;
+    ThisExample newExample;
+
     ThisExample() {
         System.out.println("This is an example program in keyword this");
     }
@@ -23,11 +25,13 @@ public class ThisExample {
         this.greet(); //invoking the greet method of the class
     }
 
+
     public static void main(String[] args) {
         ThisExample obj1 = new ThisExample();
         obj1.print();
 
         ThisExample obj2 = new ThisExample(30);
+        obj2.print();
     }
 
 }
