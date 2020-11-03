@@ -37,7 +37,7 @@ public class GameSuwit {
     }
 
     public static String komputer(double pilihanKomputer) {
-        String hasil ="";
+        String hasil;
         if (pilihanKomputer >0.66) {
             hasil = "Gajah";
         }else if(pilihanKomputer >=0.33 && pilihanKomputer <= 0.66) {
@@ -49,9 +49,9 @@ public class GameSuwit {
     }
 
     public static String cekHasil(String inputpilihanUser){
-        double pilihanKomputer = (double)Math.random();
+        double pilihanKomputer = Math.random();
         String comp = komputer(pilihanKomputer);
-        String hasil="";
+        String hasil=null;
 
         if(comp.toLowerCase().equals(inputpilihanUser.toLowerCase())){
                 hasilSeri(pilihanKomputer, inputpilihanUser);
